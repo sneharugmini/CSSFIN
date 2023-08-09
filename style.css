@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.slay {
+    width: 100%;
+    height: 100vh;
+    /*background-image: url(finalBACK.jpg);
+    background-size: cover;
+    background-position: center;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.bagvid {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.part-1 {
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+body div ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+body div ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+body div ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+body div ul li:hover::after{
+    width: 100%;
+}
+
+.main  {
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main h1 {
+    font-family: 'Vina Sans', cursive;
+    font-size: 70px;
+    font-weight: 20;
+}
+
+aside{
+    width: 400px;
+    height: 300px;
+    margin-left: 600px;
+    margin-top: 100px;
+    
+}
+
+
+button {
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: larger;
+}
+
+button:hover{
+    border: 1px solid #efb30e;
+    background: #efb30e;
+    transition: 1s;
+}
+
+@media(max-width: 700px){
+    .main{
+        font-size: 15px;
+    }
+
+    .main h1 {
+        margin-top: -280px;
+        font-size: 80px;
+    }
+
+    aside {
+        margin-left: -350px;
+        margin-top: 420px;
+        width: 300px;
+        height: 300px;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    /*body div ul li{
+        display: block;
+    }
+
+    body div {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }*/
+}
+
+.part-2 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.part-2 p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+
+.bites {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bit {
+    flex-basis: 31%;
+    background: #e5ede5;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.bit:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2) ;
+}
+
+@media(max-width: 700px) {
+    .bites {
+        flex-direction: column;
+    }
+
+    #self {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.part-3 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.tit {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tit img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    
+}
+
+.layer:hover {
+    background: rgba(69, 145, 89, 0.7);
+    
+}
+
+.layer p {
+    margin-top: 250px;
+    padding: 13px;
+    color: transparent;
+}
+
+.layer:hover p {
+    color: #090909;
+}
+
+.foot{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #2b6635;
+
+}
+
+.foot h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 900;
+    color: #fff;
+}
+
+#narc {
+    font-family: 'Edu SA Beginner', cursive;
+}
+   
+    
+
+/*#self {
+    background-color: #e2f9e3;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}*/
+
+/*#self {
+    display: grid;
+    grid-template-columns: 740px 400px;
+}
+
+.finale{
+    margin-top: 30px;
+}*/
